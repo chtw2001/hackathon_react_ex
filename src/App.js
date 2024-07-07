@@ -8,7 +8,7 @@ function App() {
 
   const handleGetRequest = async () => {
     try {
-      const response = await axios.get(`https://teamnback.sku-sku.com/api/get/${id}`);
+      const response = await axios.get(`https://teamnback.sku-sku.com/get/${id}`);
       console.log('GET response:', response.data);
     } catch (error) {
       console.error('There was an error with the GET request!', error);
@@ -17,7 +17,7 @@ function App() {
 
   const handlePostRequest = async () => {
     try {
-      const response = await axios.post('https://teamnback.sku-sku.com/api/add', { "name": name });
+      const response = await axios.post('https://teamnback.sku-sku.com/add', { "name": name });
       console.log('POST response:', response.data);
     } catch (error) {
       console.error('There was an error with the POST request!', error);
